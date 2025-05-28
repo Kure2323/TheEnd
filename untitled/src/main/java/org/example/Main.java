@@ -1,48 +1,13 @@
 package org.example;
 
-import org.example.Practica4.Videojuego;
-
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
-import com.google.gson.Gson;
 
 public class Main {
 
     static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-
-
-
-
-
-    }
-
-    private static void practica1() {
-
-        ArrayList<Videojuego> lista = new ArrayList<>();
-
-       for (int i = 0; i < 3; i++) {
-           System.out.println("Introduce el nombre del videojuego " + (i+1) + ":");
-           String nombre = in.nextLine();
-           System.out.println("Introduce la plataforma:");
-           String plataforma = in.nextLine();
-           System.out.println("Introduce el precio:");
-           double precio = in.nextDouble();
-           System.out.println("¿Está disponible? (true/false):");
-           boolean disponible = in.nextBoolean();
-           in.nextLine(); // Consumir el salto de línea pendiente
-           System.out.println("Introduce los géneros (separados por comas):");
-           String generosInput = in.nextLine();
-           String[] generosArray = generosInput.split(",");
-           lista.add(new Videojuego(nombre, plataforma, precio, disponible, Arrays.asList(generosArray)));
-       }
-
-       //Guardar la lista en un archivo JSON
-         Gson gson = new Gson();
 
     }
 

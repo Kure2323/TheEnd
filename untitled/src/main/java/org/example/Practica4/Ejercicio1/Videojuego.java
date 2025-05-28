@@ -1,4 +1,4 @@
-package org.example.Practica4;
+package org.example.Practica4.Ejercicio1;
 
 import java.util.List;
 
@@ -19,6 +19,21 @@ public class Videojuego {
         this.precio = precio;
         this.disponible = disponible;
         this.generos = generos;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Videojuego{" +
+                "nombre='" + nombre + '\'' +
+                ", plataforma='" + plataforma + '\'' +
+                ", precio=" + precio +
+                ", disponible=" + disponible +
+                ", generos=" + generos +
+                '}';
     }
 
 }
